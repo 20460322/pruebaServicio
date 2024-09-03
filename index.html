@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datos del Inventario</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Consulta de Inventario</h1>
+
+    <input type="file" id="fileInput" />
+    <input type="text" id="searchID" placeholder="Ingrese ID" />
+    <button onclick="searchData()">Buscar</button>
+
+    <div id="result">
+      <p id="type"></p>
+      <p id="quantity"></p>
+      <p id="availability"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
